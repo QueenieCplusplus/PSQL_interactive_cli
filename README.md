@@ -97,29 +97,29 @@ null|
   
 Connection
 
-\c[onnect] [DBNAME|- USER|- HOST|- PORT|-]  
-     connect to new database (currently "postgres")
-     
-\encoding [ENCODING]  
-     show or set client encoding
-     
-\password [USERNAME] 
-     securely change the password for a user
+    \c[onnect] [DBNAME|- USER|- HOST|- PORT|-]  
+         connect to new database (currently "postgres")
 
-\conninfo
-      display information about current connection
+    \encoding [ENCODING]  
+         show or set client encoding
+
+    \password [USERNAME] 
+         securely change the password for a user
+
+    \conninfo
+          display information about current connection
 
 Operating System 
 
-\cd [DIR] 
-    change the current working directory
-    
-\setenv NAME [VALUE] 
-      set or unset environment variable
+    \cd [DIR] 
+        change the current working directory
+
+    \setenv NAME [VALUE] 
+          set or unset environment variable
 
 
-\timing [on|off] 
-    toggle timing of commands (currently off)
-    
-\! [COMMAND]
-     execute command in shell or start interactive shell
+    \timing [on|off] 
+        toggle timing of commands (currently off)
+
+    \! [COMMAND]
+         execute command in shell or start interactive shell
