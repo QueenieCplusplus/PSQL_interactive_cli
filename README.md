@@ -4,6 +4,37 @@ psql Interactive Commands
 
 psql \?
 
+
+  
+Connection
+
+    \c[onnect] [DBNAME|- USER|- HOST|- PORT|-]  
+         connect to new database (currently "postgres")
+
+    \encoding [ENCODING]  
+         show or set client encoding
+
+    \password [USERNAME] 
+         securely change the password for a user
+
+    \conninfo
+          display information about current connection
+
+Operating System 
+
+    \cd [DIR] 
+        change the current working directory
+
+    \setenv NAME [VALUE] 
+          set or unset environment variable
+
+
+    \timing [on|off] 
+        toggle timing of commands (currently off)
+
+    \! [COMMAND]
+         execute command in shell or start interactive shell
+
 General 
 
     \copyright, show PostgreSQL usage and distribution terms
@@ -94,32 +125,4 @@ null|
     \T [STRING]  set HTML <table> tag attributes, or unset if none
     \x [on|off]  toggle expanded output (currently off)
 
-  
-Connection
 
-    \c[onnect] [DBNAME|- USER|- HOST|- PORT|-]  
-         connect to new database (currently "postgres")
-
-    \encoding [ENCODING]  
-         show or set client encoding
-
-    \password [USERNAME] 
-         securely change the password for a user
-
-    \conninfo
-          display information about current connection
-
-Operating System 
-
-    \cd [DIR] 
-        change the current working directory
-
-    \setenv NAME [VALUE] 
-          set or unset environment variable
-
-
-    \timing [on|off] 
-        toggle timing of commands (currently off)
-
-    \! [COMMAND]
-         execute command in shell or start interactive shell
